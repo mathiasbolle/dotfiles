@@ -1,0 +1,9 @@
+[class]
+image_default = [
+	{ command = "imv", fork = true, silent = true },
+]
+
+[extension]
+png.inherit = "image_default"
+
+jpg.inherit = "image_default"

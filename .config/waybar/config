@@ -1,0 +1,25 @@
+{
+    "layer": "top",
+		"position": "top",
+    "modules-left": ["wlr/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["network", "bluetooth", "battery"],
+		"mode": "dock",
+		"bluetooth": {
+		},
+		"network": {
+			"format": "🚀 {essid}",
+		},
+
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format-alt": "{:%a, %d. %b  %H:%M}"
+    },
+		"wlr_workspaces": {
+				"on-click": "activate"
+		}
+}
+

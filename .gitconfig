@@ -1,0 +1,10 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	email = mbolle2310@protonmail.com
+	name = Mathias Bolle
+[init]
+	defaultBranch = main

@@ -1,0 +1,8 @@
+xdg_open = true
+
+[display]
+mode = "hsplit"
+
+[preview]
+max_preview_size = 2097152 # 2MB
+preview_script = "~/.config/joshuto/preview_file.sh"
