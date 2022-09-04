@@ -1,11 +1,18 @@
 {
     "layer": "top",
 		"position": "top",
-    "modules-left": ["wlr/workspaces"],
-    "modules-center": ["clock"],
+		"margin-top": 5,
+		"margin-bottom": 5,
+		"margin-left": 5,
+		"margin-right": 5,
+    "modules-left": ["river/tags", "clock"],
+    "modules-center": ["river/window"],
     "modules-right": ["network", "bluetooth", "battery"],
 		"mode": "dock",
 		"bluetooth": {
+		},
+		"river/tags": {
+			"num-tags": 1
 		},
 		"network": {
 			"format": "🚀 {essid}",
