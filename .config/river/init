@@ -1,13 +1,16 @@
 #!/bin/sh
 
-# If you wish to edit this, you will probably want to copy it to
-# $XDG_CONFIG_HOME/river/init or $HOME/.config/river/init first.
+# River custom configuration file (c) NiceStuff | Mathias
 #
 # See the river(1), riverctl(1), and rivertile(1) man pages for complete
 # documentation.
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
-# custom programs
+
+# TODO:
+# https://github.com/alex-courtis/way-displays
+
+# custom programs by starting river
 riverctl spawn wpaperd
 riverctl spawn waybar
 
@@ -17,6 +20,8 @@ riverctl map normal Super+Shift Return spawn $TERMINAL
 
 # Super+S to start rofi 
 riverctl map normal Super S spawn "rofi -show run"
+# Super+Shift+S to start swaylock
+riverctl map normal Super+Shift E spawn "swaylock -i ~/Pictures/pexels-tiana-gray.jpg"
 
 # Super+Q to close the focused view
 riverctl map normal Super Q close
